@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><title>Municipal Waste Research Digest AI — 2026-10-27</title>
+<style>
+body{margin:0;background:#F6F5F1;color:#202725;font-family:'Plus Jakarta Sans',Arial,Helvetica,sans-serif}table,td{mso-table-lspace:0;mso-table-rspace:0}a{color:#16624E}h1,h2,h3{font-family:'Chakra Petch',Arial,sans-serif}p,li{overflow-wrap:anywhere}table{max-width:100%}.content{padding:28px}.content table{display:block;overflow-x:auto}.toc ul{padding-left:20px}.toc li{margin:6px 0}.toc a{color:#16624E} @media(max-width:620px){.wrapper{padding:12px!important}.content{padding:20px 16px!important}h1{font-size:25px!important}}@page{size:A4;margin:16mm}@media print{table[role="presentation"],table[role="presentation"]>tbody,table[role="presentation"]>tbody>tr,table[role="presentation"]>tbody>tr>td{display:block;width:auto;break-inside:auto!important}tr.toolbar{display:none!important}body{background:white}.toolbar,.toc{display:none}.wrapper{padding:0!important}.shell{border:0!important;max-width:none!important}h2,h3{break-after:avoid}p,li{orphans:3;widows:3}.content table{display:table;overflow:visible}tr{break-inside:avoid}}
+</style></head><body>
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all">Edición de archivo, publicada originalmente el 2026-10-27. Digest AI y Métodos | digest_ai | 2026-10-27
+Cobertura: 2026-10-20–2026-10-26 inclusive, America/Edmonton.
+Dos artículos actuales integran predicción y recolección. Chennai utiliza geografía real pero llenado sintético; su ahorro de distancia es un límite superior frente a una referencia estática y no una medición de combustible. El artículo AIoT/LSTM declara métricas altas, pero presenta valores de accuracy distintos entre resumen y tabla 8, sin reconciliación verificada; sus ahorros corresponden a evaluación experimental.
+Best use this week: protocolo local con horizonte al próximo despacho, test aislado de tuning/umbrales y comparación contra persistencia y regla de llenado; rutas en la misma red y con igual servicio.
+
+
+Límites: búsqueda selectiva; sin edición previa suministrada; sin validación local ni réplica de resultados.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F6F5F1"><tr><td align="center" class="wrapper" style="padding:28px 16px 40px">
+<table role="presentation" class="shell" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:white;border:1px solid #DEDAD0;border-radius:10px">
+<tr class="toolbar"><td style="padding:12px 28px;background:#FAF9F5;border-bottom:1px solid #DEDAD0;font-size:13px"><a href="https://v-datos.github.io/waste-publications/digest_ai/2026-10-27/index.html" style="color:#16624E;font-weight:bold;text-decoration:none">Versión web →</a><span style="margin:0 12px;color:#5A6561"> / </span><a href="https://v-datos.github.io/waste-publications/digest_ai/2026-10-27/report.pdf" style="color:#16624E;font-weight:bold;text-decoration:none">PDF</a></td></tr>
+<tr><td style="background:#16624E;padding:24px 28px;border-bottom:3px solid #0F4738;color:white"><div style="font-size:12px;letter-spacing:2px;text-transform:uppercase">Waste &amp; Circular Economy · 2026-10-27</div><h1 style="margin:10px 0 0;font-size:28px;line-height:1.25;color:white">Municipal Waste Research Digest AI</h1></td></tr>
+<tr><td class="content" style="padding:28px;color:#202725">
+<div style="background:#F6F5F1;border-left:3px solid #16624E;padding:14px 16px;margin-bottom:22px;line-height:1.6"><strong style="color:#16624E;font-size:12px;text-transform:uppercase">En un vistazo</strong><p style="margin:8px 0 0;font-size:15px">Edición de archivo, publicada originalmente el 2026-10-27. Digest AI y Métodos | digest_ai | 2026-10-27
+Cobertura: 2026-10-20–2026-10-26 inclusive, America/Edmonton.
+Dos artículos actuales integran predicción y recolección. Chennai utiliza geografía real pero llenado sintético; su ahorro de distancia es un límite superior frente a una referencia estática y no una medición de combustible. El artículo AIoT/LSTM declara métricas altas, pero presenta valores de accuracy distintos entre resumen y tabla 8, sin reconciliación verificada; sus ahorros corresponden a evaluación experimental.
+Best use this week: protocolo local con horizonte al próximo despacho, test aislado de tuning/umbrales y comparación contra persistencia y regla de llenado; rutas en la misma red y con igual servicio.
+
+
+Límites: búsqueda selectiva; sin edición previa suministrada; sin validación local ni réplica de resultados.</p></div>
+<div class="toc" style="padding:14px 18px;border:1px solid #DEDAD0;background:#FAF9F5;border-radius:8px;font-size:14px"><strong style="color:#16624E">En esta edición</strong><div class="toc">
+<ul>
+<li><a href="#conclusion-ejecutiva">Conclusión ejecutiva</a></li>
+<li><a href="#1-chennai-un-pipeline-reproducible-conceptualmente-no-una-prueba-de-ahorro-real">1. Chennai: un pipeline reproducible conceptualmente, no una prueba de ahorro real</a><ul>
+<li><a href="#pregunta-datos-y-diseno">Pregunta, datos y diseño</a></li>
+<li><a href="#evaluacion-y-resultados-declarados">Evaluación y resultados declarados</a></li>
+<li><a href="#limitaciones-que-cambian-la-decision">Limitaciones que cambian la decisión</a></li>
+</ul>
+</li>
+<li><a href="#2-aiot-con-lstm-las-metricas-publicadas-no-bastan-para-justificar-despliegue">2. AIoT con LSTM: las métricas publicadas no bastan para justificar despliegue</a><ul>
+<li><a href="#pregunta-procedencia-y-diseno">Pregunta, procedencia y diseño</a></li>
+<li><a href="#resultados-declarados-y-problemas-de-interpretacion">Resultados declarados y problemas de interpretación</a></li>
+<li><a href="#aplicacion-y-criterio-de-aceptacion">Aplicación y criterio de aceptación</a></li>
+</ul>
+</li>
+<li><a href="#cobertura-tematica-y-limites-de-esta-edicion">Cobertura temática y límites de esta edición</a></li>
+<li><a href="#best-use-this-week">Best use this week</a></li>
+</ul>
+</div>
+</div>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Fecha de publicación: 2026-10-27<br></br>
+Cobertura: 2026-10-20 a 2026-10-26 inclusive; America/Edmonton</p>
+<h2 id="conclusion-ejecutiva" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">Conclusión ejecutiva</h2>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Dos artículos publicados durante la ventana proponen integrar predicción de llenado y optimización de recolección. Su utilidad inmediata para Banff/Canmore es metodológica: <strong>separar simulación, evaluación predictiva y evidencia operacional</strong>. No justifican adoptar sus porcentajes de ahorro como expectativas locales. El primero documenta con claridad varias limitaciones; el segundo requiere aclaraciones sobre evaluación y consistencia de métricas antes de sustentar decisiones de inversión.</p>
+<h2 id="1-chennai-un-pipeline-reproducible-conceptualmente-no-una-prueba-de-ahorro-real" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">1. Chennai: un pipeline reproducible conceptualmente, no una prueba de ahorro real</h2>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Fuente:</strong> Shree, Chowdary y Jaraut, “AI-based smart waste collection route optimization system”, <em>Scientific Reports</em>, <strong>2026-10-20</strong>. <a href="https://www.nature.com/articles/s41598-026-75113-y" style="color:#16624E;text-decoration:underline;">Página editorial y fecha</a>; <a href="https://www.nature.com/articles/s41598-026-75113-y_reference.pdf" style="color:#16624E;text-decoration:underline;">PDF inspeccionado</a>.</p>
+<h3 id="pregunta-datos-y-diseno" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Pregunta, datos y diseño</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">El estudio pregunta cómo combinar estimación del llenado, selección de contenedores y rutas con capacidad limitada. Utiliza posiciones y metadatos geográficos de <strong>11.058 contenedores</strong> de Chennai. La fuente geográfica no incluye mediciones reales de llenado. Los autores generan datos sintéticos horarios para <strong>500 contenedores durante 365 días</strong>, con patrones por zona, hora, temporada y festividades.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Un XGBoost estima el porcentaje de llenado; umbrales por zona determinan la recolección. Después, el sistema agrupa contenedores y resuelve CVRP con OR-Tools, con alternativa greedy cuando el solver no entrega una solución a tiempo. La composición húmeda/seca/inerte se asigna mediante perfiles fijos por zona: no procede de una auditoría gravimétrica observada ni de clasificación visual validada.</p>
+<h3 id="evaluacion-y-resultados-declarados" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Evaluación y resultados declarados</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">El artículo declara R² de <strong>0,9897</strong>, MAE de <strong>2,37 puntos porcentuales</strong> y RMSE de <strong>3,01 puntos porcentuales</strong> sobre datos simulados. Usa el primer 85% de registros para entrenamiento y el último 15% para evaluación, pero ese último tramo también sirve para early stopping. Además, selecciona umbrales mediante F1 en el test. Por tanto, la evaluación final no está aislada de la selección del modelo y de la política de despacho.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">El objetivo es estimar llenado al despacho; no se verificó una evaluación multihorizonte que permita interpretar esos errores como pronósticos de varios días. Los resultados no equivalen a una comparación independiente frente a persistencia o un modelo estacional sencillo sobre sensores reales.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">La reducción de distancia de <strong>86,6%</strong> se presenta en el propio texto como límite superior frente a una referencia estática: todos los contenedores visitados diariamente y distancia estimada mediante cantidad de contenedores por separación supuesta. Las rutas propuestas usan distancias Haversine, no recorridos viales observados. El consumo de combustible <strong>no se modela directamente</strong>; el CO₂ se estima a partir de distancia mediante un factor fijo.</p>
+<h3 id="limitaciones-que-cambian-la-decision" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Limitaciones que cambian la decisión</h3>
+<ul style="padding-left:22px;">
+<li style="margin-bottom:8px;line-height:1.6;">La validez espacial del inventario no valida el generador sintético de demanda.</li>
+<li style="margin-bottom:8px;line-height:1.6;">El test interviene en early stopping y selección de umbrales; hace falta otro período no utilizado para decisiones de desarrollo.</li>
+<li style="margin-bottom:8px;line-height:1.6;">Saltarse contenedores poco llenos y optimizar rutas son mecanismos distintos. La comparación debe separar sus contribuciones bajo la misma exigencia de servicio.</li>
+<li style="margin-bottom:8px;line-height:1.6;">Distancia geométrica, combustible medido y costo total no son intercambiables. No se verificó evidencia económica de despliegue municipal.</li>
+</ul>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Aplicación propuesta — inferencia editorial:</strong> construir primero una simulación local con trazabilidad de supuestos, pero evaluar decisiones de despacho sobre lecturas reales y rutas viales. Comparar una ruta fija optimizada, una regla de umbral y la política predictiva con los mismos límites de capacidad y riesgo de desborde. Leer primero las secciones de generación sintética, partición, cálculo de distancia y limitaciones.</p>
+<h2 id="2-aiot-con-lstm-las-metricas-publicadas-no-bastan-para-justificar-despliegue" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">2. AIoT con LSTM: las métricas publicadas no bastan para justificar despliegue</h2>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Fuente:</strong> Ullah y colaboradores, “An AIoT-enabled framework for real-time predictive analytics and sustainable optimization in urban waste management systems”, <em>Scientific Reports</em>, <strong>2026-10-21</strong>. <a href="https://www.nature.com/articles/s41598-026-69874-9" style="color:#16624E;text-decoration:underline;">Página editorial y fecha</a>; <a href="https://www.nature.com/articles/s41598-026-69874-9_reference.pdf" style="color:#16624E;text-decoration:underline;">PDF inspeccionado</a>.</p>
+<h3 id="pregunta-procedencia-y-diseno" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Pregunta, procedencia y diseño</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Propone unir sensores, transmisión de datos, procesamiento cloud-edge, LSTM de dos capas, SHAP y optimización de recolección. El texto describe datos públicos y sintéticos y reconoce un entorno experimental/simulado, no una validación municipal a gran escala. La sección de datos inspeccionada enumera clases de señales y conjuntos de forma general; no permitió establecer de manera suficiente qué parte de cada evaluación procede de observaciones reales independientes.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">La tabla de configuración indica 64 unidades LSTM, dropout 0,2, Adam y pérdida MSE. La partición declarada es 70% entrenamiento, 15% validación y 15% test. En los pasajes inspeccionados no quedó establecido el horizonte de pronóstico, una partición temporal por sitio ni una prueba externa. Clasificar si hace falta recolectar no es lo mismo que estimar error de llenado futuro.</p>
+<h3 id="resultados-declarados-y-problemas-de-interpretacion" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Resultados declarados y problemas de interpretación</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">El resumen y la conclusión declaran <strong>97,1% accuracy</strong>, <strong>96,9% F1</strong> y <strong>0,978 ROC-AUC</strong> para el modelo LSTM. La tabla 13 muestra ROC-AUC <strong>0,968 para XGBoost</strong>. Estos son resultados comunicados por los autores, no una réplica independiente ni un benchmark directamente comparable con el R² del artículo de Chennai.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Hay una inconsistencia de reporte que debe resolverse: la tabla 8 presenta accuracy <strong>96,2%</strong>, precision <strong>95,8%</strong> y recall <strong>96,5%</strong>, valores distintos de los del resumen. No se atribuyen aquí a una misma corrida ni se elige arbitrariamente una serie como correcta. El texto accesible no permitió reconciliar ambas presentaciones. Esto limita la confianza en una comparación fina de rendimiento, sin demostrar por sí solo que todo el enfoque sea inválido.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Los autores también declaran <strong>32% menos combustible</strong>, <strong>35% menos viajes innecesarios</strong> y <strong>72% menos desbordes</strong>. Se conservan como afirmaciones del estudio en condiciones experimentales; no como ahorros observados en una flota municipal ni como estimaciones transferibles. La sección de limitaciones reclama implementación de campo, mayor escala y validación entre ciudades.</p>
+<h3 id="aplicacion-y-criterio-de-aceptacion" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Aplicación y criterio de aceptación</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Para Banff/Canmore, usar la arquitectura como lista de componentes posibles, no como especificación de compra. Antes de un piloto, exigir identificación/versionado de datasets, separación de registros sintéticos y observados, horizonte explícito, política de etiquetas, splits por tiempo y sitio, incertidumbre y trazabilidad entre métricas, tablas y corridas. Medir disponibilidad del sensor, falsas alarmas y desbordes, además de accuracy. SHAP describe atribuciones del modelo; no prueba causalidad ni seguridad operacional.</p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">No se verificaron throughput de clasificación, pureza de materiales, recuperación en MRF, costo de mantenimiento ni retorno económico. Este estudio trata principalmente monitoreo y decisiones de recolección, no valida separación industrial de residuos.</p>
+<h2 id="cobertura-tematica-y-limites-de-esta-edicion" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">Cobertura temática y límites de esta edición</h2>
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;">
+<thead>
+<tr>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Tema</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Resultado de la búsqueda acotada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Predicción y automatización</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Dos artículos dentro de la ventana; evidencia principalmente simulada/experimental.</td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Composición y muestreo</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">No se estableció una actualización dentro de la ventana que justifique un hallazgo cuantitativo nuevo.</td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Reciclaje/desvío</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Sin comparación nueva de desempeño municipal suficientemente verificada.</td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">CLR/ILR y Aitchison</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Sin novedad de la ventana confirmada; no se rellenó la sección con trabajo de fecha incierta.</td>
+</tr>
+<tr>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Clasificación y MRF</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Sin throughput o validación operacional nueva verificada en esta selección.</td>
+</tr>
+</tbody>
+</table>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Búsqueda selectiva, no revisión sistemática. Se inspeccionaron páginas editoriales y texto de los PDF de ambos artículos; algunas extracciones estaban abreviadas y se consultó adicionalmente el pasaje de resultados del segundo. No se replicaron modelos ni se auditaron datos originales. No se suministró una edición previa para verificar deduplicación entre números. No se interpreta la ausencia de resultados seleccionados como ausencia de investigación mundial.</p>
+<h2 id="best-use-this-week" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">Best use this week</h2>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Crear un protocolo de evaluación antes de entrenar otro modelo.</strong> Para un conjunto local de contenedores, registrar lecturas y recolecciones con timestamps, ubicación, disponibilidad del sensor y contexto operativo. Definir el horizonte como el próximo despacho y congelar un período final que no participe en tuning ni selección de umbrales. Comparar persistencia, una regla de llenado y el modelo predictivo sobre las mismas observaciones; evaluar rutas en la misma red vial y con el mismo nivel de servicio. Reportar error en puntos porcentuales, desbordes y viajes innecesarios, junto con combustible efectivamente medido cuando exista. Es una recomendación de diseño; no una intervención cuya efectividad local ya esté demostrada.</p>
+</td></tr><tr><td style="padding:18px 28px;background:#FAF9F5;border-top:1px solid #DEDAD0;color:#5A6561;font-size:12px">Municipal Waste Research Digest AI · 2026-10-27</td></tr>
+</table></td></tr></table></body></html>
