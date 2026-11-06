@@ -1,7 +1,90 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><title>Canadian EPR Landscape — 2026-11-05</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="x-apple-disable-message-reformatting"><title>Canadian EPR Landscape — 2026-11-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Libre+Baskerville:ital,wght@0,700;1,400&amp;family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#F6F5F1;color:#202725;font-family:'Plus Jakarta Sans',Arial,Helvetica,sans-serif}table,td{mso-table-lspace:0;mso-table-rspace:0}a{color:#16624E}h1,h2,h3{font-family:'Chakra Petch',Arial,sans-serif}p,li{overflow-wrap:anywhere}table{max-width:100%}.content{padding:28px}.content table{display:block;overflow-x:auto}.toc ul{padding-left:20px}.toc li{margin:6px 0}.toc a{color:#16624E} @media(max-width:620px){.wrapper{padding:12px!important}.content{padding:20px 16px!important}h1{font-size:25px!important}}@page{size:A4;margin:16mm}@media print{table[role="presentation"],table[role="presentation"]>tbody,table[role="presentation"]>tbody>tr,table[role="presentation"]>tbody>tr>td{display:block;width:auto;break-inside:auto!important}tr.toolbar{display:none!important}body{background:white}.toolbar,.toc{display:none}.wrapper{padding:0!important}.shell{border:0!important;max-width:none!important}h2,h3{break-after:avoid}p,li{orphans:3;widows:3}.content table{display:table;overflow:visible}tr{break-inside:avoid}}
+:root{
+  color-scheme:light dark;
+  --accent:#0369A1;
+  --accent-dark:#0C4A6E;
+  --accent-soft:#E0F2FE;
+  --paper:#F4F7FA;
+  --surface:#FFFFFF;
+  --border:#D6DFE8;
+  --ink:#131D24;
+  --muted:#526371;
+  --font-heading:&#39;Libre Baskerville&#39;, Georgia, &#39;Times New Roman&#39;, serif;
+  --font-sans:&#39;Public Sans&#39;, -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif;
+  --font-mono:&#39;IBM Plex Mono&#39;, SFMono-Regular, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --accent:#38BDF8;
+    --accent-dark:#0369A1;
+    --accent-soft:#112638;
+    --paper:#11161B;
+    --surface:#182027;
+    --border:#273440;
+    --ink:#ECF2F7;
+    --muted:#98A9B8;
+  }
+  body, .bg-paper{background-color:var(--paper)!important;color:var(--ink)!important}
+  .shell{background-color:var(--surface)!important;border-color:var(--border)!important}
+  .toolbar-cell, .footer-cell{background-color:var(--paper)!important;border-color:var(--border)!important;color:var(--muted)!important}
+  .content{color:var(--ink)!important}
+  .content p, .content li{color:var(--ink)!important}
+  .glance-box{background-color:var(--accent-soft)!important}
+  .glance-box strong{color:var(--accent)!important}
+  .glance-box p{color:var(--ink)!important}
+  .toc{background-color:var(--paper)!important;border-color:var(--border)!important}
+  .toc strong{color:var(--accent)!important}
+  .toc a{color:var(--accent)!important}
+  .content h2, .content h3{color:var(--accent)!important;border-color:var(--border)!important}
+  .content a{color:var(--accent)!important}
+  .content th{background-color:var(--paper)!important;border-bottom-color:var(--accent)!important;color:var(--ink)!important}
+  .content td{border-bottom-color:var(--border)!important;color:var(--ink)!important}
+  .content blockquote{background-color:var(--accent-soft)!important;border-left-color:var(--accent)!important;color:var(--ink)!important}
+  .content pre{background-color:var(--paper)!important;color:var(--ink)!important}
+}
+body{margin:0;background:#F4F7FA;color:#131D24;font-family:var(--font-sans);font-size-adjust:from-font;-webkit-font-smoothing:antialiased}
+table,td{mso-table-lspace:0;mso-table-rspace:0}
+a{color:#0369A1}
+h1,h2,h3{font-family:var(--font-heading);text-wrap:balance}
+p,li{font-family:var(--font-sans);text-wrap:pretty;overflow-wrap:anywhere}
+code,pre{font-family:var(--font-mono)}
+table{max-width:100%}
+.content{padding:28px}
+.content table{display:block;overflow-x:auto}
+.toc ul{padding-left:20px}
+.toc li{margin:6px 0}
+.toc a{color:#0369A1}
+@media screen and (min-width:720px){
+  .shell{max-width:820px!important}
+  .content{padding:36px 40px!important}
+  .masthead-cell{padding:30px 40px!important}
+  .toolbar-cell{padding:14px 40px!important}
+  .footer-cell{padding:20px 40px!important}
+}
+@media (max-width:620px){
+  .wrapper{padding:12px!important}
+  .content{padding:20px 16px!important}
+  .masthead-cell{padding:20px 18px!important}
+  h1{font-size:24px!important}
+}
+@page{size:A4;margin:16mm}
+@media print{
+  table[role="presentation"],table[role="presentation"]>tbody,table[role="presentation"]>tbody>tr,table[role="presentation"]>tbody>tr>td{display:block;width:auto;break-inside:auto!important}
+  tr.toolbar{display:none!important}
+  body{background:white}
+  .toolbar,.toc{display:none}
+  .wrapper{padding:0!important}
+  .shell{border:0!important;max-width:none!important}
+  h2,h3{break-after:avoid}
+  p,li{orphans:3;widows:3}
+  .content table{display:table;overflow:visible}
+  tr{break-inside:avoid}
+}
 </style></head><body>
 <div style="display:none;max-height:0;overflow:hidden;mso-hide:all">Archived edition, originally released 2026-11-05. Canadian EPR and Circular Economy Landscape | epr | Release 2026-11-05
 Coverage: 2026-10-29 through 2026-11-04 inclusive, America/Edmonton.
@@ -14,12 +97,25 @@ Older newly identified context: Newfoundland and Labrador waste-diversion fund d
 
 Primary-source text inspected and deduplicated against October 29. No measured recycling outcomes or municipal tariff-cost increase established. 
 </div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F6F5F1"><tr><td align="center" class="wrapper" style="padding:28px 16px 40px">
-<table role="presentation" class="shell" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:white;border:1px solid #DEDAD0;border-radius:10px">
-<tr class="toolbar"><td style="padding:12px 28px;background:#FAF9F5;border-bottom:1px solid #DEDAD0;font-size:13px"><a href="https://v-datos.github.io/waste-publications/epr/2026-11-05/index.html" style="color:#16624E;font-weight:bold;text-decoration:none">Web version →</a><span style="margin:0 12px;color:#5A6561"> / </span><a href="https://v-datos.github.io/waste-publications/epr/2026-11-05/report.pdf" style="color:#16624E;font-weight:bold;text-decoration:none">PDF</a></td></tr>
-<tr><td style="background:#16624E;padding:24px 28px;border-bottom:3px solid #0F4738;color:white"><div style="font-size:12px;letter-spacing:2px;text-transform:uppercase">Waste &amp; Circular Economy · 2026-11-05</div><h1 style="margin:10px 0 0;font-size:28px;line-height:1.25;color:white">Canadian EPR Landscape</h1></td></tr>
-<tr><td class="content" style="padding:28px;color:#202725">
-<div style="background:#F6F5F1;border-left:3px solid #16624E;padding:14px 16px;margin-bottom:22px;line-height:1.6"><strong style="color:#16624E;font-size:12px;text-transform:uppercase">At a glance</strong><p style="margin:8px 0 0;font-size:15px">Archived edition, originally released 2026-11-05. Canadian EPR and Circular Economy Landscape | epr | Release 2026-11-05
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="bg-paper" style="background:#F4F7FA"><tr><td align="center" class="wrapper" style="padding:28px 16px 40px">
+<table role="presentation" class="shell" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:white;border:1px solid #D6DFE8;border-radius:10px;overflow:hidden">
+<tr class="toolbar"><td class="toolbar-cell" style="padding:12px 28px;background:#F4F7FA;border-bottom:1px solid #D6DFE8;font-size:13px"><a href="https://v-datos.github.io/waste-publications/epr/2026-11-05/index.html" style="color:#0369A1;font-weight:bold;text-decoration:none">Web version →</a><span style="margin:0 12px;color:#526371"> / </span><a href="https://v-datos.github.io/waste-publications/epr/2026-11-05/report.pdf" style="color:#0369A1;font-weight:bold;text-decoration:none">PDF</a></td></tr>
+<tr><td class="masthead-cell" style="background:#0369A1;padding:24px 28px;border-bottom:3px solid #0C4A6E;color:#FFFFFF">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="color:#FFFFFF">
+<tr>
+<td valign="middle" style="width:32px;padding-right:12px;color:#FFFFFF;line-height:1">
+<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+</td>
+<td valign="middle" style="color:#FFFFFF">
+<div style="font-family:var(--font-heading);font-size:11.5px;letter-spacing:1.8px;text-transform:uppercase;color:rgba(255,255,255,0.92);line-height:1.3">Thursday · 10:00 AM America/Edmonton · 2026-11-05</div>
+</td>
+</tr>
+</table>
+<h1 style="margin:12px 0 0;font-size:27px;line-height:1.24;color:#FFFFFF;font-family:var(--font-heading)">Canadian EPR Landscape</h1>
+<div style="margin:8px 0 0;font-size:13.5px;line-height:1.45;color:rgba(255,255,255,0.88);font-family:var(--font-sans)">Regulación de responsabilidad extendida del productor, PROs y mercados circulares.</div>
+</td></tr>
+<tr><td class="content" style="padding:28px;color:#131D24">
+<div class="glance-box" style="background:#E0F2FE;border-left:4px solid #0369A1;border-radius:0 8px 8px 0;padding:14px 18px;margin-bottom:22px;line-height:1.6"><strong style="color:#0369A1;font-size:12px;letter-spacing:1px;text-transform:uppercase">At a glance</strong><p style="margin:8px 0 0;font-size:15px;color:#131D24">Archived edition, originally released 2026-11-05. Canadian EPR and Circular Economy Landscape | epr | Release 2026-11-05
 Coverage: 2026-10-29 through 2026-11-04 inclusive, America/Edmonton.
 
 NEW effective milestone: U.S. Proclamation 11076 brought specified Canadian waste tariff lines into an additional 50% duty scope on October 30. Not a blanket tariff finding for all recyclables; municipalities should verify shipment classifications and contract allocation.
@@ -30,7 +126,7 @@ Older newly identified context: Newfoundland and Labrador waste-diversion fund d
 
 Primary-source text inspected and deduplicated against October 29. No measured recycling outcomes or municipal tariff-cost increase established. 
 </p></div>
-<div class="toc" style="padding:14px 18px;border:1px solid #DEDAD0;background:#FAF9F5;border-radius:8px;font-size:14px"><strong style="color:#16624E">In this issue</strong><div class="toc">
+<div class="toc" style="padding:14px 18px;border:1px solid #D6DFE8;background:#F4F7FA;border-radius:8px;font-size:14px"><strong style="color:#0369A1">In this issue</strong><div class="toc">
 <ul>
 <li><a href="#executive-brief">Executive brief</a></li>
 <li><a href="#1-regulatory-developments-by-jurisdiction">1. Regulatory developments by jurisdiction</a><ul>
@@ -55,124 +151,124 @@ Primary-source text inspected and deduplicated against October 29. No measured r
 </ul>
 </div>
 </div>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Product:</strong> epr<br></br>
-<strong>Release:</strong> 2026-11-05<br></br>
-<strong>Coverage:</strong> 2026-10-29 through 2026-11-04 inclusive, America/Edmonton<br></br>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Product:</strong> epr<br>
+<strong>Release:</strong> 2026-11-05<br>
+<strong>Coverage:</strong> 2026-10-29 through 2026-11-04 inclusive, America/Edmonton<br>
 <strong>Evidence status:</strong> Supported findings from a partial search. Primary text inspected; operator notices are not independently measured outcomes. Deduplicated against the 2026-10-29 edition.</p>
-<h2 id="executive-brief" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">Executive brief</h2>
+<h2 id="executive-brief" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">Executive brief</h2>
 <ul style="padding-left:22px;">
-<li style="margin-bottom:8px;line-height:1.6;"><strong>NEW to this bulletin — U.S. waste-tariff expansion became effective October 30.</strong> Proclamation 11076 adds specified Canadian products, including municipal waste, sewage sludge and clinical waste tariff lines, to an additional <strong>50% ad valorem duty</strong>. This is a consequential cross-border cost signal, not a new Canadian EPR rule or a blanket tariff on all recyclables. The proclamation was signed October 23, before this coverage window; its October 30 effectiveness is the within-window development. <a href="https://public-inspection.federalregister.gov/2026-22292.pdf" style="color:#16624E;text-decoration:underline;">Proclamation, operative paragraph 1 and Annex I Part B</a></li>
-<li style="margin-bottom:8px;line-height:1.6;"><strong>NEW — Wood Buffalo recycling disruption reported November 4.</strong> Circular Materials' community page attributes delays for November 4–6 to operational issues and says collections are one day behind schedule in listed neighbourhoods. This supports a local service warning, not a province-wide failure claim or confirmation that catch-up occurred. <a href="https://www.circularmaterials.ca/resident-communities/wood-buffalo/" style="color:#16624E;text-decoration:underline;">Operator notice</a></li>
-<li style="margin-bottom:8px;line-height:1.6;"><strong>UPDATED milestone, not a new announcement — the FPR access cutoff has passed.</strong> ECCC's previously reported advisory specified October 30 for needed reviews/amendments and October 31 for maintenance to begin. The inspected page still displays the outage advisory and supplies no restoration date. Reporting-platform functionality was not independently tested. <a href="https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/federal-plastics-registry.html" style="color:#16624E;text-decoration:underline;">ECCC advisory</a></li>
-<li style="margin-bottom:8px;line-height:1.6;"><strong>ONGOING — Ontario and BC consultation preparation remains actionable.</strong> Ontario's Blue Box consultation closes November 26; Call2Recycle lists BC amended-plan webinars beginning November 10. Neither source establishes an adopted change to collection instructions. <a href="https://ero.ontario.ca/notice/026-1058" style="color:#16624E;text-decoration:underline;">Ontario registry</a>; <a href="https://recycleyourbatteries.ca/bc-program-plan-consultation/" style="color:#16624E;text-decoration:underline;">Call2Recycle consultation</a></li>
+<li style="margin-bottom:8px;line-height:1.6;"><strong>NEW to this bulletin — U.S. waste-tariff expansion became effective October 30.</strong> Proclamation 11076 adds specified Canadian products, including municipal waste, sewage sludge and clinical waste tariff lines, to an additional <strong>50% ad valorem duty</strong>. This is a consequential cross-border cost signal, not a new Canadian EPR rule or a blanket tariff on all recyclables. The proclamation was signed October 23, before this coverage window; its October 30 effectiveness is the within-window development. <a href="https://public-inspection.federalregister.gov/2026-22292.pdf" style="color:#0369A1;text-decoration:underline;">Proclamation, operative paragraph 1 and Annex I Part B</a></li>
+<li style="margin-bottom:8px;line-height:1.6;"><strong>NEW — Wood Buffalo recycling disruption reported November 4.</strong> Circular Materials' community page attributes delays for November 4–6 to operational issues and says collections are one day behind schedule in listed neighbourhoods. This supports a local service warning, not a province-wide failure claim or confirmation that catch-up occurred. <a href="https://www.circularmaterials.ca/resident-communities/wood-buffalo/" style="color:#0369A1;text-decoration:underline;">Operator notice</a></li>
+<li style="margin-bottom:8px;line-height:1.6;"><strong>UPDATED milestone, not a new announcement — the FPR access cutoff has passed.</strong> ECCC's previously reported advisory specified October 30 for needed reviews/amendments and October 31 for maintenance to begin. The inspected page still displays the outage advisory and supplies no restoration date. Reporting-platform functionality was not independently tested. <a href="https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/federal-plastics-registry.html" style="color:#0369A1;text-decoration:underline;">ECCC advisory</a></li>
+<li style="margin-bottom:8px;line-height:1.6;"><strong>ONGOING — Ontario and BC consultation preparation remains actionable.</strong> Ontario's Blue Box consultation closes November 26; Call2Recycle lists BC amended-plan webinars beginning November 10. Neither source establishes an adopted change to collection instructions. <a href="https://ero.ontario.ca/notice/026-1058" style="color:#0369A1;text-decoration:underline;">Ontario registry</a>; <a href="https://recycleyourbatteries.ca/bc-program-plan-consultation/" style="color:#0369A1;text-decoration:underline;">Call2Recycle consultation</a></li>
 </ul>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Decision implication — analyst inference:</strong> review U.S.-bound waste contracts and shipment classifications now; check Wood Buffalo service recovery directly with the contractor; retain FPR records and seek official restoration guidance; use the open consultations to resolve service and cost allocation rather than anticipating unadopted rules.</p>
-<h2 id="1-regulatory-developments-by-jurisdiction" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">1. Regulatory developments by jurisdiction</h2>
-<h3 id="cross-border-exposure-new-effective-milestone-specified-canadian-waste-enters-expanded-us-tariff-scope" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Cross-border exposure — NEW effective milestone: specified Canadian waste enters expanded U.S. tariff scope</h3>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">The inspected Federal Register public-inspection PDF identifies <strong>Proclamation 11076</strong>, signed <strong>October 23, 2026</strong>, filed October 29 and scheduled for publication October 30. Operative paragraph 1 adds Annex I Part B products of Canada to the additional <strong>50% ad valorem duty</strong>, effective for goods entered for consumption, or withdrawn from warehouse for consumption, on or after <strong>12:01 a.m. Eastern on October 30, 2026</strong>. This is enacted proclamation language, not a consultation. <a href="https://public-inspection.federalregister.gov/2026-22292.pdf" style="color:#16624E;text-decoration:underline;">Primary instrument</a></p>
+<h2 id="1-regulatory-developments-by-jurisdiction" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">1. Regulatory developments by jurisdiction</h2>
+<h3 id="cross-border-exposure-new-effective-milestone-specified-canadian-waste-enters-expanded-us-tariff-scope" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">Cross-border exposure — NEW effective milestone: specified Canadian waste enters expanded U.S. tariff scope</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">The inspected Federal Register public-inspection PDF identifies <strong>Proclamation 11076</strong>, signed <strong>October 23, 2026</strong>, filed October 29 and scheduled for publication October 30. Operative paragraph 1 adds Annex I Part B products of Canada to the additional <strong>50% ad valorem duty</strong>, effective for goods entered for consumption, or withdrawn from warehouse for consumption, on or after <strong>12:01 a.m. Eastern on October 30, 2026</strong>. This is enacted proclamation language, not a consultation. <a href="https://public-inspection.federalregister.gov/2026-22292.pdf" style="color:#0369A1;text-decoration:underline;">Primary instrument</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Relevant Part B entries include:</p>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;">
 <thead>
 <tr>
-<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">HTSUS identifier, as printed</th>
-<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Description in the proclamation</th>
-<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Evidence boundary</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #0369A1;background:#F4F7FA;">HTSUS identifier, as printed</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #0369A1;background:#F4F7FA;">Description in the proclamation</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #0369A1;background:#F4F7FA;">Evidence boundary</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">3825.10.01</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Residual products of the chemical or allied industries, nesoi; Municipal waste</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Confirm actual shipment classification with the importer/customs specialist.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">3825.10.01</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Residual products of the chemical or allied industries, nesoi; Municipal waste</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Confirm actual shipment classification with the importer/customs specialist.</td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">3825.20.00</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Residual products of the chemical or allied industries, nesoi; Sewage sludge</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Do not infer the same treatment for every biosolids-derived product.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">3825.20.00</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Residual products of the chemical or allied industries, nesoi; Sewage sludge</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Do not infer the same treatment for every biosolids-derived product.</td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">3825.30.00</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Residual products of the chemical or allied industries, nesoi; Clinical waste</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Distinct waste stream; not all municipal recycling.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">3825.30.00</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Residual products of the chemical or allied industries, nesoi; Clinical waste</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Distinct waste stream; not all municipal recycling.</td>
 </tr>
 </tbody>
 </table>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">The annex explicitly says descriptions are informational and do not delimit legal scope, directing scope questions to U.S. Customs and Border Protection. The White House's <strong>October 23</strong> fact sheet says covered goods remain subject regardless of USMCA originating status and that the duties apply in addition to Section 232 tariffs where applicable. That is the administration's implementation explanation; this bulletin has not independently checked a specific customs entry, subsequent CBP ruling or live tariff database. <a href="https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-further-modifies-canadian-products-subject-to-tariffs-under-section-338/" style="color:#16624E;text-decoration:underline;">Fact sheet</a></p>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">The annex explicitly says descriptions are informational and do not delimit legal scope, directing scope questions to U.S. Customs and Border Protection. The White House's <strong>October 23</strong> fact sheet says covered goods remain subject regardless of USMCA originating status and that the duties apply in addition to Section 232 tariffs where applicable. That is the administration's implementation explanation; this bulletin has not independently checked a specific customs entry, subsequent CBP ruling or live tariff database. <a href="https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-further-modifies-canadian-products-subject-to-tariffs-under-section-338/" style="color:#0369A1;text-decoration:underline;">Fact sheet</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Why it matters — analyst inference.</strong> Canadian municipalities or contractors using U.S. disposal routes should establish which loads fall within the listed tariff lines, who is importer of record, and which contract party bears duties or change-in-law costs. Review lawful domestic alternatives and contingency capacity before accepting a generalized surcharge. The inspected instrument does <strong>not</strong> establish actual municipal invoices, shipment diversion, disposal-capacity availability or a measured change in recycling economics. A 50% customs duty must not be described as a 50% increase in the total collection bill: those have different cost bases.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Classification and deduplication:</strong> this development was absent from the supplied previous edition. The announcement predates the window; the effective milestone falls inside it. No claim is made that the proclamation was first announced this week. No blanket “all Canadian waste/recyclables” conclusion is supported.</p>
-<h3 id="federal-updated-milestone-fpr-maintenance-window-reached" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Federal — UPDATED milestone: FPR maintenance window reached</h3>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">ECCC's page, modified <strong>October 27</strong>, continues to display “Federal Plastics Registry reporting system temporarily unavailable.” It says planned maintenance/modernization begins <strong>October 31, 2026</strong>, and asked organizations needing to review or amend <strong>2024 or 2025 reports</strong> to act by <strong>11:59 p.m. Eastern on October 30</strong>. Once access is restored, users are to be redirected to the modernized Regulatory Services Platform. No restoration date appears in that advisory. <a href="https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/federal-plastics-registry.html" style="color:#16624E;text-decoration:underline;">ECCC, opening notice</a></p>
+<h3 id="federal-updated-milestone-fpr-maintenance-window-reached" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">Federal — UPDATED milestone: FPR maintenance window reached</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">ECCC's page, modified <strong>October 27</strong>, continues to display “Federal Plastics Registry reporting system temporarily unavailable.” It says planned maintenance/modernization begins <strong>October 31, 2026</strong>, and asked organizations needing to review or amend <strong>2024 or 2025 reports</strong> to act by <strong>11:59 p.m. Eastern on October 30</strong>. Once access is restored, users are to be redirected to the modernized Regulatory Services Platform. No restoration date appears in that advisory. <a href="https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/federal-plastics-registry.html" style="color:#0369A1;text-decoration:underline;">ECCC, opening notice</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>What changed since last edition:</strong> the announced access cutoff and maintenance start now lie within the elapsed coverage interval. The notice itself is not newly issued, and its persistence is not an independent uptime test. Do not infer a filing extension, a waiver, successful migration or continued outage duration from this page alone.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Action — analyst inference:</strong> preserve submission confirmations and correction working files; use the official assistance contact in the notice for unresolved access/correction needs. The page's broad registry description must not override its phased reporting table; no new all-sector reporting obligation is established here.</p>
-<h3 id="ontario-ongoing-blue-box-proposal-still-under-consultation-in-inspected-registry" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Ontario — ONGOING: Blue Box proposal still under consultation in inspected registry</h3>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">ERO <strong>026-1058</strong> identifies a proposal posted and last updated <strong>October 27</strong>, with comments open until <strong>November 26, 2026, at 11:59 p.m.</strong> It describes targeted enabling amendments to the Resource Recovery and Circular Economy Act and potential future Blue Box regulatory changes intended to improve transparency, accountability and cost stability. This consultation was covered in the previous edition. <a href="https://ero.ontario.ca/notice/026-1058" style="color:#16624E;text-decoration:underline;">Ontario government registry</a></p>
+<h3 id="ontario-ongoing-blue-box-proposal-still-under-consultation-in-inspected-registry" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">Ontario — ONGOING: Blue Box proposal still under consultation in inspected registry</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">ERO <strong>026-1058</strong> identifies a proposal posted and last updated <strong>October 27</strong>, with comments open until <strong>November 26, 2026, at 11:59 p.m.</strong> It describes targeted enabling amendments to the Resource Recovery and Circular Economy Act and potential future Blue Box regulatory changes intended to improve transparency, accountability and cost stability. This consultation was covered in the previous edition. <a href="https://ero.ontario.ca/notice/026-1058" style="color:#0369A1;text-decoration:underline;">Ontario government registry</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Current evidence boundary:</strong> the inspected registry text remains a proposal. It does not establish that the proposed package is already effective, and this run did not separately verify the bill's subsequent legislative progress. No new Ontario rule dated October 29–November 4 is claimed.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Municipal implication — analyst inference:</strong> continue preparing operational evidence on service requirements, contract costs and resident communication. Do not revise accepted-material or overflow instructions on the assumption that the consultation's options have been adopted.</p>
-<h3 id="british-columbia-ongoing-batteryvape-consultation-webinars-approach" style="margin:22px 0 10px;font-size:19px;color:#16624E;">British Columbia — ONGOING: battery/vape consultation webinars approach</h3>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Call2Recycle's consultation page, labelled <strong>October 2026</strong>, describes focused amendments adding vapes/e-cigarettes, 12-volt batteries and portable power. It lists one-hour webinars on <strong>November 10, 12, 16 and 18</strong>. The operator's amended plan lists written feedback until <strong>December 8, 2026, at 5 p.m. Pacific</strong>. These dates repeat an active consultation covered last week; they are not a newly approved service expansion. <a href="https://recycleyourbatteries.ca/bc-program-plan-consultation/" style="color:#16624E;text-decoration:underline;">Operator consultation page</a>; <a href="https://call2recycle.ca/wp-content/uploads/2026/10/Call2Recycle-2025-2029-BC-Amended-Program-Plan.pdf" style="color:#16624E;text-decoration:underline;">amended plan, section 5.1</a></p>
+<h3 id="british-columbia-ongoing-batteryvape-consultation-webinars-approach" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">British Columbia — ONGOING: battery/vape consultation webinars approach</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Call2Recycle's consultation page, labelled <strong>October 2026</strong>, describes focused amendments adding vapes/e-cigarettes, 12-volt batteries and portable power. It lists one-hour webinars on <strong>November 10, 12, 16 and 18</strong>. The operator's amended plan lists written feedback until <strong>December 8, 2026, at 5 p.m. Pacific</strong>. These dates repeat an active consultation covered last week; they are not a newly approved service expansion. <a href="https://recycleyourbatteries.ca/bc-program-plan-consultation/" style="color:#0369A1;text-decoration:underline;">Operator consultation page</a>; <a href="https://call2recycle.ca/wp-content/uploads/2026/10/Call2Recycle-2025-2029-BC-Amended-Program-Plan.pdf" style="color:#0369A1;text-decoration:underline;">amended plan, section 5.1</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Municipal implication — analyst inference:</strong> bring questions on product acceptance, storage, damaged-product handling, pickup commitments and site compensation. Confirm webinar times through registration: the web page uses the ambiguous label “PCT” and pairs Pacific/Eastern times that should not be treated as independently validated timezone conversions. This bulletin intentionally lists webinar dates without converting hours.</p>
-<h2 id="2-program-and-municipal-operations" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">2. Program and municipal operations</h2>
-<h3 id="alberta-wood-buffalo-new-november-4-notice-documents-local-collection-delays" style="margin:22px 0 10px;font-size:19px;color:#16624E;">Alberta / Wood Buffalo — NEW: November 4 notice documents local collection delays</h3>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Circular Materials' Wood Buffalo community page carries a dated <strong>November 4, 2026</strong> service alert for <strong>November 4–6</strong>. It cites “operational issues,” says collection is one day behind the regular schedule, and asks residents to have bins out by <strong>7 a.m.</strong> The Wednesday locations are Thickwood and Wood Buffalo; further Thursday and Friday locations are listed on the source page. The page directs collection questions to <strong>Collective Waste Solutions</strong>. <a href="https://www.circularmaterials.ca/resident-communities/wood-buffalo/" style="color:#16624E;text-decoration:underline;">Operator notice, “Recycling service alert”</a></p>
+<h2 id="2-program-and-municipal-operations" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">2. Program and municipal operations</h2>
+<h3 id="alberta-wood-buffalo-new-november-4-notice-documents-local-collection-delays" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">Alberta / Wood Buffalo — NEW: November 4 notice documents local collection delays</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Circular Materials' Wood Buffalo community page carries a dated <strong>November 4, 2026</strong> service alert for <strong>November 4–6</strong>. It cites “operational issues,” says collection is one day behind the regular schedule, and asks residents to have bins out by <strong>7 a.m.</strong> The Wednesday locations are Thickwood and Wood Buffalo; further Thursday and Friday locations are listed on the source page. The page directs collection questions to <strong>Collective Waste Solutions</strong>. <a href="https://www.circularmaterials.ca/resident-communities/wood-buffalo/" style="color:#0369A1;text-decoration:underline;">Operator notice, “Recycling service alert”</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Coverage boundary:</strong> the November 4 publication is inside the reporting window; its November 5–6 instructions are forward-looking at cutoff. No completed catch-up, missed-tonnage total, cause beyond “operational issues,” or safety finding is verified. The same page states that the local collection program started October 5; that is older implementation context, not this week's news.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Why it matters — analyst inference:</strong> Alberta's provincial EPR launch should be tracked separately from delivered local service. Municipal contact centres and property managers need the current contractor notice, a common escalation route and confirmation of actual recovery. One local operator alert cannot support a provincial reliability rate or the conclusion that EPR caused the delay.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Source-reconciliation note:</strong> search results exposed an older November 2 Wood Buffalo alert; direct extraction returned the newer November 4 notice. The bulletin uses the inspected newer text, not both as cumulative unresolved incidents. A search result also showed a Crowsnest Pass weather alert, but direct extraction did not reproduce it; it is excluded as a current finding.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;">Residential packaging collection must not be generalized to industrial, commercial, institutional or tourism waste. Neither the Wood Buffalo notice nor the cross-border tariff instrument creates a new entitlement to commercial collection.</p>
-<h2 id="3-infrastructure-end-markets-and-financial-signals" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">3. Infrastructure, end markets and financial signals</h2>
-<h3 id="new-effective-cost-exposure-but-no-verified-change-in-throughput" style="margin:22px 0 10px;font-size:19px;color:#16624E;">NEW effective cost exposure, but no verified change in throughput</h3>
+<h2 id="3-infrastructure-end-markets-and-financial-signals" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">3. Infrastructure, end markets and financial signals</h2>
+<h3 id="new-effective-cost-exposure-but-no-verified-change-in-throughput" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">NEW effective cost exposure, but no verified change in throughput</h3>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;">The U.S. tariff scope change above is this edition's material within-window financial signal. Its practical effect depends on classification, shipment value and contractual allocation. No quantified municipal exposure is calculated: inspected evidence contains no shipment-level customs values or contract pass-through terms.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;">No new commissioned recycling capacity, audited end-market sale, operating throughput or measured recycling-rate change dated October 29–November 4 was established by this bounded search. This is an evidence limitation, not a finding that no investment occurred. The prior edition's Alberta facility forecasts and annual cost assertions are not recycled here as new results.</p>
-<h3 id="ongoing-newly-identified-older-funding-opportunity-newfoundland-and-labrador-deadline" style="margin:22px 0 10px;font-size:19px;color:#16624E;">ONGOING / newly identified older funding opportunity — Newfoundland and Labrador deadline</h3>
-<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">An <strong>October 7, 2026</strong> provincial announcement says applications for the <strong>2026–27 Community Waste Diversion Fund</strong> are accepted until <strong>November 13, 2026</strong>. It describes maximum contributions of <strong>CAD 25,000</strong> for municipalities, Indigenous community governments and local service districts implementing community waste-diversion initiatives. This is older, newly identified context absent from the previous edition, included for its upcoming deadline—not a funding award made this week. <a href="https://www.gov.nl.ca/releases/2026/eccc/1007n04/" style="color:#16624E;text-decoration:underline;">Provincial announcement</a></p>
+<h3 id="ongoing-newly-identified-older-funding-opportunity-newfoundland-and-labrador-deadline" style="margin:22px 0 10px;font-size:19px;color:#0369A1;">ONGOING / newly identified older funding opportunity — Newfoundland and Labrador deadline</h3>
+<p style="margin:0 0 14px;line-height:1.65;font-size:16px;">An <strong>October 7, 2026</strong> provincial announcement says applications for the <strong>2026–27 Community Waste Diversion Fund</strong> are accepted until <strong>November 13, 2026</strong>. It describes maximum contributions of <strong>CAD 25,000</strong> for municipalities, Indigenous community governments and local service districts implementing community waste-diversion initiatives. This is older, newly identified context absent from the previous edition, included for its upcoming deadline—not a funding award made this week. <a href="https://www.gov.nl.ca/releases/2026/eccc/1007n04/" style="color:#0369A1;text-decoration:underline;">Provincial announcement</a></p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Decision implication — analyst inference:</strong> potentially eligible Newfoundland and Labrador applicants should check the current application guide and remaining program conditions before submitting. This is not an Alberta funding opportunity, an EPR reimbursement entitlement or evidence that any funded project achieved the intended diversion. The linked application form and remaining budget were not independently inspected.</p>
-<h2 id="4-upcoming-dates-and-immediate-decisions" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">4. Upcoming dates and immediate decisions</h2>
+<h2 id="4-upcoming-dates-and-immediate-decisions" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">4. Upcoming dates and immediate decisions</h2>
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;">
 <thead>
 <tr>
-<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Date</th>
-<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Decision or milestone</th>
-<th style="text-align:left;padding:8px;border-bottom:2px solid #16624E;background:#F6F5F1;">Status and source</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #0369A1;background:#F4F7FA;">Date</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #0369A1;background:#F4F7FA;">Decision or milestone</th>
+<th style="text-align:left;padding:8px;border-bottom:2px solid #0369A1;background:#F4F7FA;">Status and source</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>Now: effective since 2026-10-30</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Review relevant U.S.-bound Canadian waste classifications and contract duty allocation.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Adopted tariff-scope milestone; not a Canadian EPR amendment. <a href="https://public-inspection.federalregister.gov/2026-22292.pdf" style="color:#16624E;text-decoration:underline;">Proclamation</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>Now: effective since 2026-10-30</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Review relevant U.S.-bound Canadian waste classifications and contract duty allocation.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Adopted tariff-scope milestone; not a Canadian EPR amendment. <a href="https://public-inspection.federalregister.gov/2026-22292.pdf" style="color:#0369A1;text-decoration:underline;">Proclamation</a></td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>2026-11-05–06</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Wood Buffalo service-alert horizon.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Forward instructions in November 4 operator notice; recovery not verified. <a href="https://www.circularmaterials.ca/resident-communities/wood-buffalo/" style="color:#16624E;text-decoration:underline;">Circular Materials</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>2026-11-05–06</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Wood Buffalo service-alert horizon.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Forward instructions in November 4 operator notice; recovery not verified. <a href="https://www.circularmaterials.ca/resident-communities/wood-buffalo/" style="color:#0369A1;text-decoration:underline;">Circular Materials</a></td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>2026-11-10, 12, 16, 18</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">BC amended battery-plan webinars.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Operator-listed; verify hours when registering. <a href="https://recycleyourbatteries.ca/bc-program-plan-consultation/" style="color:#16624E;text-decoration:underline;">Consultation</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>2026-11-10, 12, 16, 18</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">BC amended battery-plan webinars.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Operator-listed; verify hours when registering. <a href="https://recycleyourbatteries.ca/bc-program-plan-consultation/" style="color:#0369A1;text-decoration:underline;">Consultation</a></td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>2026-11-13</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Newfoundland and Labrador Community Waste Diversion Fund applications.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Deadline in October 7 announcement; confirm current guide. <a href="https://www.gov.nl.ca/releases/2026/eccc/1007n04/" style="color:#16624E;text-decoration:underline;">Province</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>2026-11-13</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Newfoundland and Labrador Community Waste Diversion Fund applications.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Deadline in October 7 announcement; confirm current guide. <a href="https://www.gov.nl.ca/releases/2026/eccc/1007n04/" style="color:#0369A1;text-decoration:underline;">Province</a></td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>2026-11-26, 11:59 p.m.</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Ontario ERO 026-1058 comments close.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Registry-displayed time; proposal, not adopted service change. <a href="https://ero.ontario.ca/notice/026-1058" style="color:#16624E;text-decoration:underline;">ERO</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>2026-11-26, 11:59 p.m.</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Ontario ERO 026-1058 comments close.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Registry-displayed time; proposal, not adopted service change. <a href="https://ero.ontario.ca/notice/026-1058" style="color:#0369A1;text-decoration:underline;">ERO</a></td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>2026-12-08, 5 p.m. Pacific</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Call2Recycle BC amended-plan written comments.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">Operator plan, section 5.1; not plan approval. <a href="https://call2recycle.ca/wp-content/uploads/2026/10/Call2Recycle-2025-2029-BC-Amended-Program-Plan.pdf" style="color:#16624E;text-decoration:underline;">Plan</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>2026-12-08, 5 p.m. Pacific</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Call2Recycle BC amended-plan written comments.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">Operator plan, section 5.1; not plan approval. <a href="https://call2recycle.ca/wp-content/uploads/2026/10/Call2Recycle-2025-2029-BC-Amended-Program-Plan.pdf" style="color:#0369A1;text-decoration:underline;">Plan</a></td>
 </tr>
 <tr>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;"><strong>No date established</strong></td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">FPR restoration / migration completion.</td>
-<td style="vertical-align:top;padding:8px;border-bottom:1px solid #DEDAD0;">ECCC advisory gives no restoration date; portal not tested. <a href="https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/federal-plastics-registry.html" style="color:#16624E;text-decoration:underline;">ECCC</a></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;"><strong>No date established</strong></td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">FPR restoration / migration completion.</td>
+<td style="vertical-align:top;padding:8px;border-bottom:1px solid #D6DFE8;">ECCC advisory gives no restoration date; portal not tested. <a href="https://www.canada.ca/en/environment-climate-change/services/managing-reducing-waste/reduce-plastic-waste/federal-plastics-registry.html" style="color:#0369A1;text-decoration:underline;">ECCC</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="5-what-to-watch-next" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">5. What to watch next</h2>
+<h2 id="5-what-to-watch-next" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">5. What to watch next</h2>
 <ol>
 <li style="margin-bottom:8px;line-height:1.6;"><strong>Cross-border contracts:</strong> shipment-specific CBP interpretation, importer-of-record arrangements, documented surcharges and available lawful alternatives. Separate potential exposure from actual paid duties and disposal-cost increases.</li>
 <li style="margin-bottom:8px;line-height:1.6;"><strong>Alberta service:</strong> Wood Buffalo catch-up confirmation and repeated exceptions, with route-level evidence rather than assuming recovery from a revised schedule.</li>
@@ -180,10 +276,10 @@ Primary-source text inspected and deduplicated against October 29. No measured r
 <li style="margin-bottom:8px;line-height:1.6;"><strong>Ontario / BC:</strong> adopted instruments or approved plans, explicit service boundaries and site-level funding commitments. Consultation activity alone is not implementation.</li>
 <li style="margin-bottom:8px;line-height:1.6;"><strong>Performance evidence:</strong> distinguish supplied, collected, sorted, recycled, stored and disposed tonnes; state period, material and denominator before comparing rates. This edition calculates no recycling rate.</li>
 </ol>
-<h2 id="sources-self-check-and-limitations" style="margin:28px 0 12px;border-top:1px solid #DEDAD0;padding-top:20px;font-size:23px;color:#16624E;">Sources, self-check and limitations</h2>
+<h2 id="sources-self-check-and-limitations" style="margin:28px 0 12px;border-top:1px solid #D6DFE8;padding-top:20px;font-size:23px;color:#0369A1;">Sources, self-check and limitations</h2>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Primary sources inspected in this run:</strong> Proclamation 11076 (complete downloaded PDF, including operative paragraph 1 and Annexes I–II); the White House October 23 fact sheet; Circular Materials' November 4 Wood Buffalo alert; ECCC's FPR advisory and phased reporting guidance; Ontario ERO 026-1058; Call2Recycle's consultation web page; and the Newfoundland and Labrador October 7 announcement. The BC amended-plan section 5.1 consultation passage was inspected through retrieved PDF text; the full plan was not re-reviewed. Government/regulator text establishes the instrument or announcement described; PRO/operator text is attributed, not independent outcome verification.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Deduplication:</strong> the supplied October 29 report was read. Ontario, BC and the FPR announcement are explicitly carried forward rather than relabelled NEW. The tariff's effective milestone and Wood Buffalo alert were not in that edition. Older Newfoundland and Labrador funding is labelled with its original announcement date.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Research boundary:</strong> practical searches covered Canadian EPR/circular-economy news, Alberta/western program notices, Ontario Blue Box developments, federal plastics guidance, funding and cross-border waste exposure. This was not an exhaustive survey of every province, territory, procurement portal or funding database. No independent service recovery, customs entry, current CBP enforcement practice, portal login, application form, facility commissioning or mass balance was verified. Findings concern source text available at production; live pages can change after the closed coverage period. Future instructions are separated from observed events.</p>
 <p style="margin:0 0 14px;line-height:1.65;font-size:16px;"><strong>Source limitations:</strong> operator search snippets and extracted pages differed; only reproduced primary text supports included local alerts. The BC webinar timezone labels are ambiguous, so converted times are omitted. These limitations narrow the bulletin; they do not establish the absence of other developments.</p>
-</td></tr><tr><td style="padding:18px 28px;background:#FAF9F5;border-top:1px solid #DEDAD0;color:#5A6561;font-size:12px">Canadian EPR Landscape · 2026-11-05</td></tr>
+</td></tr><tr><td class="footer-cell" style="padding:18px 28px;background:#F4F7FA;border-top:1px solid #D6DFE8;color:#526371;font-size:12px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="color:#526371;font-size:12px">Canadian EPR Landscape · 2026-11-05</td><td align="right" style="font-size:12px"><a href="https://v-datos.github.io/waste-publications/epr/2026-11-05/index.html" style="color:#0369A1;text-decoration:none;font-weight:600">Web version</a></td></tr></table></td></tr>
 </table></td></tr></table></body></html>
